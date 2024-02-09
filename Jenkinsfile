@@ -11,7 +11,7 @@ pipeline {
 
       stage('Build image') { 
         steps  { 
-          sh 'docker build -t ${DOCKERHUB_ID}/${IMAGE_NAME}:${IMAGE_TAG}'
+          sh 'docker build -t ${DOCKERHUB_ID}/${IMAGE_NAME}:${IMAGE_TAG} .'
                        }
           }
 
